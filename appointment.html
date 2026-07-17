@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Book Appointment | Spectrum Family Clinic & Diagnostic Centre</title>
+  <meta name="description" content="Book your doctor consultation, diagnostic test, or home sample collection at Spectrum Family Clinic Gudimalkapur. Simple booking redirected via WhatsApp.">
+  <meta name="keywords" content="Book doctor appointment Gudimalkapur, Diagnostic booking Hyderabad, Home blood collection request">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="headerLogoLink">
+        <img src="assets/logo.jpeg" alt="Spectrum Family Clinic Logo" class="logo-img">
+        <div class="brand-text">
+          Spectrum
+          <span>Family Clinic & Diagnostics</span>
+        </div>
+      </a>
+      
+      <nav class="nav">
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link" id="navHome">Home</a></li>
+          <li><a href="about.html" class="nav-link" id="navAbout">About Us</a></li>
+          <li><a href="doctors.html" class="nav-link" id="navDoctors">Doctors</a></li>
+          <li><a href="services.html" class="nav-link" id="navServices">Services</a></li>
+          <li><a href="diagnostics.html" class="nav-link" id="navDiagnostics">Diagnostics</a></li>
+          <li><a href="contact.html" class="nav-link" id="navContact">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="appointment.html" class="btn btn-primary active" id="headerBookBtn">
+          <i class="fa-regular fa-calendar-check"></i> Book Appointment
+        </a>
+      </div>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Inner Hero Section -->
+  <section class="inner-hero">
+    <div class="container">
+      <h1>Book Your Appointment</h1>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Home</a></li>
+        <li>Book Appointment</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Booking Tabs & Forms Container -->
+  <section class="section-padding container reveal">
+    <div class="booking-container reveal">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <h2>Select Appointment Type</h2>
+        <p>Choose how you would like to receive care. Fill out the details to generate your WhatsApp booking.</p>
+      </div>
+
+      <!-- Booking Tabs -->
+      <div class="booking-tabs">
+        <button class="booking-tab-btn active" data-tab="doctor">
+          <i class="fa-solid fa-user-doctor"></i>
+          <span>Consult a Doctor</span>
+        </button>
+        <button class="booking-tab-btn" data-tab="test">
+          <i class="fa-solid fa-vial-virus"></i>
+          <span>Diagnostic Test</span>
+        </button>
+        <button class="booking-tab-btn" data-tab="home">
+          <i class="fa-solid fa-house-chimney-medical"></i>
+          <span>Home Sample Collection</span>
+        </button>
+      </div>
+
+      <!-- Tab 1 Form: Consult a Doctor -->
+      <div class="booking-form-box active" id="form-doctor">
+        <form class="appointment-form" id="form-doctor">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="docName">Full Name *</label>
+              <input type="text" id="docName" name="name" class="form-control" placeholder="Enter patient name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="docPhone">Phone Number *</label>
+              <input type="tel" id="docPhone" name="phone" class="form-control" placeholder="Enter 10-digit number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="docSelect">Select Doctor / Department *</label>
+              <select id="docSelect" name="doctor" class="form-control">
+                <option value="harish">Dr. Kotla Harish (General Physician)</option>
+                <option value="ravikanth">Dr. Ravikanth (Pediatrician)</option>
+                <option value="sushmitha">Dr. Sushmitha (ENT Specialist)</option>
+                <option value="lohitesh">Dr. S. Lohitesh (Orthopedic Surgeon)</option>
+                <option value="akhila">Dr. Akhila (Gynecologist & Obstetrician)</option>
+                <option value="nagulan">Dr. S. Nagulan (General & Laparoscopic Surgeon)</option>
+                <option value="general">Physiotherapy Consultation</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="docDate">Preferred Date *</label>
+              <input type="date" id="docDate" name="date" class="form-control" required>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="docMsg">Message (Optional)</label>
+              <textarea id="docMsg" name="message" class="form-control" placeholder="Describe symptoms or medical history"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Confirm & Book via WhatsApp</button>
+        </form>
+      </div>
+
+      <!-- Tab 2 Form: Diagnostic Test -->
+      <div class="booking-form-box" id="form-test">
+        <form class="appointment-form" id="form-test">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="testName">Full Name *</label>
+              <input type="text" id="testName" name="name" class="form-control" placeholder="Enter patient name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="testPhone">Phone Number *</label>
+              <input type="tel" id="testPhone" name="phone" class="form-control" placeholder="Enter 10-digit number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="testSelect">Select Individual Test *</label>
+              <select id="testSelect" name="test" class="form-control">
+                <option value="cbp">Complete Blood Picture (CBP / CBC) </option>
+                <option value="fbs">Fasting Blood Glucose(FBS) </option>
+                <option value="plbs">Post Lunch Blood Glucose(PLBS) </option>
+                <option value="hba1c">HbA1c </option>
+                <option value="sugar">Random Blood Sugar </option>
+                <option value="lipid">Lipid Profile </option>
+                <option value="thyroid">Thyroid Profile </option>
+                <option value="kft">Kidney Function Test (RFT/KFT) </option>
+                <option value="lft">Liver Function Test (LFT) </option>
+                <option value="vitd">Vitamin D3 </option>
+                <option value="vitd">Vitamin B12 </option>
+                <option value="urine">Complete Urine Examination(CUE) </option>
+                <option value="other">Other Diagnostic Test (Specify in Message)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="testDate">Preferred Date *</label>
+              <input type="date" id="testDate" name="date" class="form-control" required>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="testMsg">Message / Specific Test Details (Optional)</label>
+              <textarea id="testMsg" name="message" class="form-control" placeholder="Please mention other tests or requirements here"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Confirm & Book via WhatsApp</button>
+        </form>
+      </div>
+
+      <!-- Tab 3 Form: Home Sample Collection -->
+      <div class="booking-form-box" id="form-home">
+        <form class="appointment-form" id="form-home">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="homeName">Full Name *</label>
+              <input type="text" id="homeName" name="name" class="form-control" placeholder="Enter patient name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="homePhone">Phone Number *</label>
+              <input type="tel" id="homePhone" name="phone" class="form-control" placeholder="Enter 10-digit number" required>
+            </div>
+
+            <div class="form-group">
+              <label for="packageSelect">Select Health Profile Package *</label>
+              <select id="packageSelect" name="package" class="form-control">
+                <option value="diabetic">Lupikavach Diabetic - ₹310</option>
+                <option value="vitamin-basic">Lupikavach Vitamin - ₹990</option>
+               <option value="dahlia">Lupikavach Dahlia - ₹1,040</option>
+               <option value="lily">Lupikavach Lily - ₹1,290</option>
+               <option value="fever">Fever Panel - ₹1,550</option>
+               <option value="daisy">Lupikavach Daisy - ₹2,290</option>
+               <option value="aster-lavender">Lupikavach Aster (M) / Lavender (F) - ₹3,450</option>
+               <option value="aster-plus-lavender-plus">Lupikavach Aster Plus (M) / Lavender Plus (F) - ₹6,200</option>
+               <option value="other">Multiple Tests / Custom Blood Collection</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="homeDate">Preferred Collection Date *</label>
+              <input type="date" id="homeDate" name="date" class="form-control" required>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label for="homeAddress">Complete Home Address *</label>
+              <textarea id="homeAddress" name="message" class="form-control" placeholder="Enter complete door number, building, and landmark for phlebotomist visit" required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary"><i class="fa-brands fa-whatsapp"></i> Confirm & Request Collection</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Confirmation Redirect Modal -->
+  <div class="modal-overlay" id="confirmationModal">
+    <div class="modal-card">
+      <div class="modal-icon"><i class="fa-brands fa-whatsapp"></i></div>
+      <h3>Redirecting to WhatsApp</h3>
+      <p>Your appointment information has been compiled. You will now be redirected to WhatsApp to confirm and send the pre-filled message directly to Spectrum Clinic front desk.</p>
+      <div class="modal-actions">
+        <button class="btn btn-outline" id="confirmCancel">Cancel</button>
+        <button class="btn btn-secondary" id="confirmProceed">Proceed <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo-link" style="margin-bottom: 1rem;">
+            <img src="assets/logo.jpeg" alt="Spectrum Family Clinic Logo" class="logo-img" style="border: 2px solid rgba(255,255,255,0.2);">
+            <div class="brand-text" style="color: #FFFFFF;">
+              Spectrum
+              <span style="color: rgba(255,255,255,0.6);">Family Clinic & Diagnostics</span>
+            </div>
+          </a>
+          <p>Providing premium and compassionate family healthcare and diagnostics services under the guidance of experienced medical consultants in Gudimalkapur, Hyderabad.</p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/share/1BTDL4vWSD/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/spectrum.clinic14?igsh=MWdrMHIwYWJzZGtmZw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/917981484949" class="social-icon" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="doctors.html">Our Doctors</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="diagnostics.html">Diagnostics</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#physician">General Physician</a></li>
+            <li><a href="services.html#ent">ENT </a></li>
+            <li><a href="services.html#ortho">Orthopedic Surgeon</a></li>
+            <li><a href="services.html#gynec">Gynaecologist</a></li>
+            <li><a href="services.html#pediatrics">Pediatrics</a></li>
+            <li><a href="services.html#physio">Physiotherapy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contact Details</h4>
+          <ul class="footer-contact">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Opposite SBI, Gudimalkapur Road, Karwan, Hyderabad - 500006</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <span><a href="tel:7981484949">7981484949</a></span>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp"></i>
+              <span><a href="https://wa.me/917981484949" target="_blank">7981484949</a></span>
+            </li>
+            <li>
+              <i class="fa-regular fa-clock"></i>
+              <span>Mon - Sat: 07:00 AM - 10:00 PM<br>Sunday: 07:00 AM - 02-00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Spectrum Family Clinic & Diagnostic Centre. All Rights Reserved.</p>
+        <ul class="footer-bottom-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Bottom Mobile Bar -->
+  <div class="sticky-bottom-bar">
+    <a href="tel:7981484949" class="sticky-bottom-item highlight" id="mobileStickyCall">
+      <i class="fa-solid fa-phone"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="https://wa.me/917981484949" class="sticky-bottom-item highlight-green" id="mobileStickyWa" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="appointment.html" class="sticky-bottom-item" id="mobileStickyBook">
+      <i class="fa-regular fa-calendar-check"></i>
+      <span>Book Appointment</span>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
