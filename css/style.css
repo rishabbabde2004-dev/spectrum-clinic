@@ -83,7 +83,7 @@ h2 {
 .section-header {
   text-align: center;
   max-width: 700px;
-  margin: 0 auto 3rem auto;
+  margin: 3rem auto 3rem auto;
 }
 
 .section-header h2::after {
@@ -469,7 +469,7 @@ img {
   background-color: #FFFFFF;
   box-shadow: var(--shadow-md);
   border-radius: var(--radius-lg);
-  margin-top: 40px;
+  margin-top: 70px;
   position: relative;
   z-index: 10;
   padding: 2rem;
@@ -816,15 +816,15 @@ img {
 }
 
 .package-badge {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  
 }
 
 .package-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  padding-right: 4rem;
+  
 }
 
 .package-partner {
@@ -2188,4 +2188,14 @@ padding-right:18px;
     line-height:1.6;
 }
 
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.badge {
+  display: inline-flex;
+  margin-bottom: 1rem;
 }
